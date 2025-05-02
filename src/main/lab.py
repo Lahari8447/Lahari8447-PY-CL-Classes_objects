@@ -58,7 +58,17 @@ class Lightbulb:
     """
 
     # Write your code here
-
+    def get_description(self):
+        """
+        Returns a description string indicating whether the bulb is on or off.
+        Returns:
+            str: "The bulb is on" if state is True, "The bulb is off" if state is False.
+        """
+        if self.state:
+            return "The bulb is on"
+        else:
+            return "The bulb is off"
+  
 def create_bulb(state):
     """
     Function to create a new Lightbulb instance with the provided state.
